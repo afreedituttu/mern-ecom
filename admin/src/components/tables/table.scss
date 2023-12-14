@@ -1,0 +1,29 @@
+.tableCell{
+    .cellWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .image{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        
+        &.approved{
+            color: rgb(0, 94, 0);
+            background: rgba(31, 218, 31, 0.351);
+        }
+        &.pending{
+            color: goldenrod;
+            background: rgba(230, 230, 35, 0.343);
+        }
+    }
+}
